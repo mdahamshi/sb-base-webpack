@@ -1,5 +1,5 @@
 import "./styles.css";
-import logoImage from "../asset/food.svg";
+import logoImage from "../asset/logo.svg";
 
 
 import {View} from './view.js';
