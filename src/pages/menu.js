@@ -10,6 +10,8 @@ export default function() {
         { name: 'Grilled Chicken Shawarma', description: 'Served with tahini and fresh pita', price: '$9.99' },
         { name: 'Falafel Plate', description: 'Crispy falafel with hummus and salad', price: '$7.49' },
         { name: 'Stuffed Grape Leaves', description: 'Filled with rice, herbs, and lemon', price: '$6.25' },
+        { name: 'Stuffed Grape Leaves', description: 'Filled with rice, herbs, and lemon', price: '$6.25' },
+        { name: 'Stuffed Grape Leaves', description: 'Filled with rice, herbs, and lemon', price: '$6.25' },
     ];
 
     const ul = document.createElement('ul');

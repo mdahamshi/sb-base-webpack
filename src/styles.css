@@ -10,7 +10,7 @@
 :root {
     --lite-gray: #D6D9Dc;
     --label-width: 120px;
-    --sb-theme-color: #e85b30;
+    --sb-theme-color: #3080e8;
     --sb-conent-bg: #fcf9f8;
     --sb-corner-radius: 12px;
     --sb-padding: 16px;
@@ -65,7 +65,7 @@ ul {
 }
 .logo img {
   position: relative;
-  bottom: 4px;
+  bottom: 1px;
 }
 nav.flex-row {
   justify-content: space-between;
@@ -85,7 +85,7 @@ button {
 button.sb-button {
   border-radius: var(--sb-corner-radius);
   color: white;
-  background-color: #e85b30;
+  background-color: var(--sb-theme-color);
   padding: 10px;
   outline: none;
   font-weight: bold;
@@ -104,10 +104,17 @@ body {
   flex-direction: column;
   width: 100dvw;
 }
+
 #content {
-  padding: var(--sb-padding);
-  flex: 1;
-  width: 100%;
+    display: grid;
+    list-style-type: none;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    resize: both;
+    width: 100%;
+
+    overflow-y: auto;
 }
 
 .hero-section {
