@@ -1,10 +1,9 @@
 import "./styles.css";
 import logoImage from "../asset/logo.svg";
 
+import { View } from "./view.js";
 
-import {View} from './view.js';
+new View("My App");
 
-new View('My App');
-
-const logo = document.querySelector('#nav-logo');
+const logo = document.querySelector("#nav-logo");
 logo.src = logoImage;

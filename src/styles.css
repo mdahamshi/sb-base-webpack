@@ -2,36 +2,61 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    border-radius: var(--sb-corner-radius);
-
-
+  font-family:
+    sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+  border-radius: var(--sb-corner-radius);
 }
 :root {
-    --lite-gray: #D6D9Dc;
-    --label-width: 120px;
-    --sb-theme-color: #3080e8;
-    --sb-conent-bg: #fcf9f8;
-    --sb-corner-radius: 12px;
-    --sb-padding: 16px;
-    --sb-border-color-thin: #f3eae7;
+  --lite-gray: #d6d9dc;
+  --label-width: 120px;
+  --sb-theme-color: #3080e8;
+  --sb-conent-bg: #fcf9f8;
+  --sb-corner-radius: 12px;
+  --sb-padding: 16px;
+  --sb-border-color-thin: #f3eae7;
 }
-.sb-animate , #content { 
-    animation-duration: 0.5s;
-    animation-name: animate-fade;
-    animation-delay: 0.5s;
-    animation-fill-mode: backwards;
+.sb-animate,
+#content {
+  animation-duration: 0.5s;
+  animation-name: animate-fade;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
 }
 @keyframes animate-fade {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 html {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
   font-size: 16px;
   background-color: var(--sb-conent-bg);
-  
 }
 
 .menu-item {
@@ -43,18 +68,18 @@ html {
   list-style-type: none;
 }
 .sb-shadow {
-   box-shadow: 4px 4px 4px rgba(72,73,121,0.15) !important;
-   z-index: 2;
+  box-shadow: 4px 4px 4px rgba(72, 73, 121, 0.15) !important;
+  z-index: 2;
 }
 .flex-row {
-    display: flex;
-    gap: 25px;
-    align-items: center;
+  display: flex;
+  gap: 25px;
+  align-items: center;
 }
 .flex-col {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
 .logo {
   width: 30px;
@@ -70,13 +95,14 @@ nav.flex-row {
   border-bottom: 1px solid var(--sb-border-color-thin);
 }
 button:hover {
-    filter: brightness(1.1);
-    cursor: pointer;
-    transform: scale(1.03);
-    transition: all 0.3s ease;
+  filter: brightness(1.1);
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: all 0.3s ease;
 }
-button:focus-visible, button:focus {
-    outline: none;
+button:focus-visible,
+button:focus {
+  outline: none;
 }
 button {
   cursor: pointer;
@@ -95,19 +121,18 @@ header nav button {
   font-size: 16px;
   border: none;
   background-color: white;
-
 }
 body {
   height: 100dvh;
   display: flex;
   flex-direction: column;
 }
- #content {
+#content {
   padding: var(--sb-padding);
   flex: 1;
   width: 100%;
- }
- /*
+}
+/*
  grid app mode
 #content {
     display: grid;
@@ -133,7 +158,6 @@ body {
   color: white;
   justify-content: center;
   gap: 50px;
-
 }
 .hero-section p {
   background-color: rgba(0, 0, 0, 0.562);
@@ -141,20 +165,19 @@ body {
 }
 .menu-item-action {
   justify-content: space-between;
-
 }
 
 footer {
   padding: var(--sb-padding);
 }
 
-  .nav-links {
-    display: none;
-    flex-direction: column;
-  }
-  .nav-links.active {
-    display: flex;
-  }
+.nav-links {
+  display: none;
+  flex-direction: column;
+}
+.nav-links.active {
+  display: flex;
+}
 @media only screen and (min-width: 700px) {
   #content {
     max-width: 980px;
@@ -162,7 +185,6 @@ footer {
   }
   .hero-section {
     height: 500px;
-
   }
   .menu-toggle {
     display: none;
@@ -170,7 +192,6 @@ footer {
   .nav-links {
     display: flex;
     flex-direction: row;
-
   }
 }
 
@@ -178,7 +199,9 @@ footer {
   overflow: hidden;
   max-height: 1000px; /* or a very large value */
   opacity: 1;
-  transition: max-height 0.3s ease, opacity 0.3s ease;
+  transition:
+    max-height 0.3s ease,
+    opacity 0.3s ease;
 }
 
 .collapsible.collapsed {
